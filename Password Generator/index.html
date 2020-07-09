@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Password Generator</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+<body>
+
+ <div class="container"> 
+
+  <div class="header">
+   <h1>Password Generator</h1>
+  </div>
+
+  <div class="result-box">
+   <span id="password">Aa1#Bb2$</span>
+   <button id="clipboard-btn">       
+     <i class='fas fa-clipboard-check'></i>
+   </button>
+  </div>
+   
+  <div class="input-container">
+
+    <div>
+     <label for="length">Password Length</label>    
+     <input id="length" value="8" type="number" min="4" max="16">
+    </div>
+       
+    <div>
+     <label for="upper-alpha">Include UpperCase Letters</label>
+     <input id="upper-alpha" type="checkbox" checked>     
+    </div>
+    
+    <div>
+     <label for="lower-alpha">Include LowerCase Letters</label>
+     <input id="lower-alpha" type="checkbox" checked>     
+    </div>
+    
+    <div>
+     <label for="number">Include Numbers</label>
+     <input id="number" type="checkbox" checked>     
+    </div>
+    
+    <div>
+     <label for="symbol">Include Special Characters</label>
+     <input id="symbol" type="checkbox" checked>     
+    </div>
+     
+  </div> 
+   
+  <div class="main-button">
+   <button id="generate-btn">Generate</button> 
+  </div> 
+  
+ </div>  
+  <script src="script.js"> </script>   
+</body>
+</html>
